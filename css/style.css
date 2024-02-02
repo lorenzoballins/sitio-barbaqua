@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+html>body>header {
+    background-image: url('../imagens/sitio04.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    /* Altere este valor conforme necessário */
+    background-position: center;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    /* Alterado para fixed */
+    top: 0px;
+    /* Posição inicial acima do conteúdo */
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.logo {
+    margin: 0;
+
+    display: flex;
+    margin-right: auto;
+    /* Isso empurra a imagem para a esquerda */
+    margin-left: auto;
+    /* Isso empurra a imagem para a direita (espaço para outras coisas) */
+}
+
+#burguer {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-top: 30px;
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+nav>.menu>a {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* Adiciona uma transição suave para a cor do texto */
+}
+
+.menu>a:hover {
+    color: #5F8771;
+    /* Adicionei a cor de hover aqui */
+}
+
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+main {
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: justify;
+    padding: 2px;
+
+}
+article{
+    padding: 12px;
+}
+section{
+    padding: 8px;
+}
+article>p{
+    
+    word-spacing: normal;
+}
+
+p {
+    
+    word-spacing: -0.5px;
+}
+
+
+section {
+    margin-top: 80px;
+
+
+}
+
+section {
+    display: flex;
+}
+
+.text {
+    flex-direction: column;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.animate-container{
+    opacity:0;
+    
+    transform: translateX(-100%) ;
+    transition: all 1s;
+}
+
+.show{
+    
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+
+.gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+
+
+.gallery img {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+
+ 
+
+
+@media(max-width:840px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav>.menu>a {
+        font-weight: 700;
+
+        padding: 30px;
+        padding-top: 0px;
+
+    }
+
+    .menu {
+        overflow: hidden;
+
+        transition: all 0.9s ease;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+
+        padding: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+
+
+    }
+
+    #burguer {
+        display: block;
+    }
+
+    .gallery{
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+
+    
+}
+
+@media(max-width:800px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 49px;
+    }
+    .text {
+        order: 2; /* Adiciona a classe text à segunda posição na ordem flexível */
+      }
+    
+      .img-container {
+        order: 1; /* Move a imagem para a primeira posição */
+      }
+    
+}
+
+@media(max-width:370px) {
+    .logo>img {
+        width: 87%;
+    }
+
+    #burguer {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    
+}
