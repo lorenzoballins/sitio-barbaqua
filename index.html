@@ -7,6 +7,13 @@
 
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
+  
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+   
+    
     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/css/lightbox.min.css">
@@ -35,6 +42,9 @@
 
 <body>
     <header>
+        <div class="whatsapp">
+            <a href="https://wa.me//5541988526978"><img src="imagens/whatsapp.png" alt="logo do whatsapp"></a>
+        </div>
         <nav>
             <div class="logo">
                 <img src="imagens/barbaqua-logo.png" alt="logo" class="logo">
@@ -43,10 +53,10 @@
                 </span>
             </div>
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Eventos</a>
-                <a href="#">Estrutura</a>
-                <a href="#">Contato</a>
+                <a href="index.html">Home</a>
+                <a href="#secao_eventos">Eventos</a>
+                <a href="#secao_estrutura">Estrutura</a>
+                <a href="#secao_contato">Contato</a>
             </div>
 
             </div>
@@ -64,14 +74,15 @@
         </article>
 
 
-        <section class="animate-container">
+        <section class="animate-container" id="secao_eventos">
 
 
             <div class="text">
 
                 <h1>Salão para Festas</h1>
                 <p>Nosso salão principal é preparado para festas de formaturas, casamentos, aniversários e eventos
-                    corporativos com capacidade para receber até 100 pessoas com segurança e conforto.</p>
+                    corporativos com capacidade para receber até 140 pessoas com segurança e conforto.
+                <strong>obs:</strong>apenas ofereçemos locação</p>
 
             </div>
 
@@ -112,29 +123,29 @@
             </div>
         </section>
 
-        <article>
+        <article id="secao_estrutura">
             <h1 style="margin-top:150px;">Estrutura</h1>
             <p>O Sítio Barbaquá é um local com lindos cenários fotográficos que irão te proporcionar os mais belos
                 registros dos momentos mais felizes da sua festa. Confira algumas fotos da nossa galeria.</p>
         </article>
 
-        <div class="gallery">
-            <a href="imagens/sitio09.jpg" data-lightbox="gallery" data-title="Salão de Festas">
+        <div class="gallery" class="animate-container">
+            <a href="imagens/sitio09.jpg"  data-lightbox="gallery" data-title="Salão de Festas">
                 <img src="imagens/sitio09.jpg" alt="Image 1">
             </a>
-            <a href="imagens/sitio10.jpg" data-lightbox="gallery" data-title="Casa Noturna"  >
+            <a href="imagens/sitio10.jpg" data-lightbox="gallery" data-title="Entrada do sítio">
                 <img src="imagens/sitio10.jpg" alt="Image 2">
             </a>          
 
-            <a href="imagens/sitio11.jpg"  data-lightbox="gallery" data-title="Aniversário">
+            <a href="imagens/sitio11.jpg"  data-lightbox="gallery" data-title="Aniversário de 15 anos">
                 <img src="imagens/sitio11.jpg" alt="Aniversário">
             </a>
             
-            <a href="imagens/sitio12.jpg"  data-lightbox="gallery" data-title="Lago noturno">
+            <a href="imagens/sitio12.jpg"  data-lightbox="gallery" data-title="Lago há noite">
                 <img src="imagens/sitio12.jpg" alt="Lago noturno">
             </a>
 
-            <a href="imagens/sitio13.jpg"  data-lightbox="gallery" data-title="Buffet">
+            <a href="imagens/sitio13.jpg"  data-lightbox="gallery" data-title="buffet de casamento">
                 <img src="imagens/sitio13.jpg" alt="Buffet">
             </a>
 
@@ -142,35 +153,59 @@
                 <img src="imagens/sitio14.jpg" alt="Mesa arrumada">
             </a>
 
-            <a href="imagens/sitio15.jpg"  data-lightbox="gallery" data-title="Placa">
+            <a href="imagens/sitio15.jpg"  data-lightbox="gallery" data-title="Placa do Sítio Barbaquá">
                 <img src="imagens/sitio15.jpg" alt="Placa">
             </a>
 
-            <a href="imagens/sitio16.jpg"  data-lightbox="gallery" data-title="Salão">
+            <a href="imagens/sitio16.jpg"  data-lightbox="gallery" data-title="Imagem de um fosso">
                 <img src="imagens/sitio16.jpg" alt="Salão">
             </a>
 
-            <a href="imagens/sitio17.jpg"  data-lightbox="gallery" data-title="fosso">
+            <a href="imagens/sitio17.jpg"  data-lightbox="gallery" data-title="Entrada para salão de festas">
                 <img src="imagens/sitio17.jpg" alt="fosso">
             </a> 
 
             
 
             <a href="imagens/sitio18.jpg"
-            data-lightbox="gallery" data-title="Riacho"  >
+            data-lightbox="gallery" data-title="Roda da água"  >
             <img src="imagens/sitio18.jpg" alt="Riacho">
             </a>
 
-            <a href="imagens/sitio19.jpg" data-lightbox="gallery" data-title="Lago"  >
+            <a href="imagens/sitio19.jpg" data-lightbox="gallery" data-title="Lago do Sítio Barbaquá"  >
                 <img src="imagens/sitio19.jpg" alt="Lago">
             </a>
 
-            <a href="imagens/sitio20.jpg"  data-lightbox="gallery" data-title="Banco">
+            <a href="imagens/sitio20.jpg"  data-lightbox="gallery" data-title="Banco há frente do Lago">
                 <img src="imagens/sitio20.jpg" alt="Banco">
             </a>
         </div>
 
+        <article class="mapBox-container" id="secao_contato">
+            <div class="contato-container">
+                <h2>Fale conosco</h2>
+
+                <p><img src="imagens/phone.svg" alt="phone-icon">(41) 98852-6978 </p>
+                <h2>Localização</h2>
+                <p><img src="imagens/location.svg" alt="location-icon">Comendador Cândido Cunha - Campina, Campo Largo - PR, 83602-692</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1800.239837542914!2d-49.55292519323984!3d-25.52239422920565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd11d454d8f437%3A0xdb86edc8240e2c59!2zU8OtdGlvIEJhcmJhcXXDoQ!5e0!3m2!1spt-BR!2sbr!4v1707163898344!5m2!1spt-BR!2sbr" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapBox"></iframe>
+        </article>
     </main>
+    <footer>
+        <div class="footer-items"><a href="https://maps.app.goo.gl/xHF7t4MhNnG17g3bA"><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg><strong>Sitio Barbaqua</p></strong><p>Comendador Cândido Cunha - Campina, Campo Largo - PR, 83602-692</p></a>
+      <a href="https://wa.me//5541988526978"> <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg><strong>Telefone</p></strong><p>(41) 98852-6978 </p></a>
+      <a href="https://wa.me//5541988526978"><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg><strong>Whatsapp</strong></p><p>(41) 98852-6978 </p></a>
+    <a href="https://www.instagram.com/sitio_barbaqua_/">
+         <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg> <strong>Instagram </p></strong><p>@sitio_barbaqua_</p>
+     </a></div>
+     <div id="credits">
+         <p><strong>Desenvolvido por:</strong>
+         
+            <a href="https://github.com/lorenzoballins">Lorenzo Stoco</a>
+         </p>
+     </div> 
+    </footer>
 </body>
 
 </html>

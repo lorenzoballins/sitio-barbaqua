@@ -23,6 +23,12 @@ html>body>header {
     background-position: center;
 }
 
+.whatsapp{
+    z-index: 10;
+   position: fixed;
+   right: 5px; /* Ajuste a posição conforme necessário */
+   bottom: 0px; /* Ajuste a posição conforme necessário */
+}
 
 
 nav {
@@ -169,10 +175,87 @@ section {
    margin: 0;
 }
 
-
- 
-
-
+.mapBox-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contato-container>h2{
+    margin-top: 40px;
+    color: #333;
+    padding-bottom: 40px;
+}
+.contato-container>p>img{
+   
+   margin-right: 10px;
+}
+.contato-container>p{
+    
+    padding-bottom: 30px;
+}
+.mapBox{
+    display: flex;
+    margin-left: 20px;
+    border: 2px solid black;
+    width: 500px;
+   padding: 0px;
+}
+ footer{
+   padding-left: 40px;
+   justify-content: center;
+    
+    
+    
+    background-color: black;
+ }
+ svg{
+    margin-right: 10px;
+    fill: white;
+ }
+ .footer-items{
+   max-width: 1100px;
+   display: grid;
+  
+    grid-template-columns: repeat(4,auto);
+    
+    justify-items: center;
+    align-items: center;
+    
+}
+.footer-items>a>p>strong{
+    color: white;
+}
+.footer-items>a{
+    padding-top: 20px;
+    margin-right: 100px;
+   
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+    font-weight: 500px;
+}
+#credits{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   margin-top: 70px;
+}
+#credits>p{
+    color: rgb(139, 139, 139);
+    
+   
+   
+}
+#credits>p>a{
+    
+    color: white;
+    
+        display: block;
+    text-align: center !important;
+    font-weight: 600;
+    font-size: 28px;
+    
+}
 @media(max-width:840px) {
     nav {
         flex-direction: column;
@@ -214,7 +297,13 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 
-    
+    .mapBox-container{
+        flex-direction: column;
+    }
+    .mapBox{
+        margin: 0;
+        width: auto;
+    }
 
     
 }
@@ -234,12 +323,43 @@ section {
       .img-container {
         order: 1; /* Move a imagem para a primeira posição */
       }
-    
+     
 }
 
+@media(max-width:900px){
+    .footer-items{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media(max-width:500px){
+    footer{
+        
+       
+        justify-content: left;
+    }
+    .footer-items{
+       
+        grid-template-columns: 1fr 1fr ;
+       
+    }
+}
 @media(max-width:370px) {
     .logo>img {
         width: 87%;
+    }
+   
+        footer{
+            
+           
+            justify-content: left;
+        }
+        .footer-items{
+            margin-right: 200px;
+            grid-template-columns: 1fr;
+            justify-content: left;
+           
+        }
     }
 
     #burguer {
@@ -248,4 +368,3 @@ section {
     }
 
     
-}
