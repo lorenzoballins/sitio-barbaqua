@@ -187,12 +187,13 @@ section {
     color: #333;
     padding-bottom: 40px;
 }
-.contato-container>p>img{
+.contato-container>p>a>img{
    
    margin-right: 10px;
 }
-.contato-container>p{
-    
+.contato-container>p>a{
+    color: black;
+    text-decoration: none;
     padding-bottom: 30px;
 }
 .mapBox{
